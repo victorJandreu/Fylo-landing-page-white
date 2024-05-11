@@ -1,0 +1,68 @@
+
+@use'../util' as u;
+
+header{
+    max-width: 1020px;
+    padding-top: 1.5rem;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        ul{
+            padding: 0;
+            display: flex;
+            gap: u.rem(15);
+            list-style: none;
+        }
+    }
+
+    .description{
+        text-align: center;
+        img{
+            width: 100%;
+            margin-top: 3rem;
+       
+        }
+
+        .input-btn{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+
+    @include u.breakpoints-number(700px){
+        
+        .description{
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 40px;
+            
+          
+
+            img{
+                max-width: 500px;
+                width: 30%;
+                order: 1;
+            }
+
+            .input-btn{
+                flex-direction: row;
+
+                input{
+                    width: 60%;
+                }
+                button{
+                    width: 30%;
+                }
+            }
+        }
+      
+    }
+
+}
+

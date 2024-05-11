@@ -1,0 +1,34 @@
+@use'../util' as u;
+
+//  font-size: clamp(u.rem(28), u.rem(16) + 3vw, u.rem(40));
+
+h1,
+h2,
+h3{
+    font-family: var(--heading-400-770);
+    font-size: 700;
+}
+
+h1{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+h2{
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+p, a{
+    margin-top: 0;
+    font-family: var(--body-400);
+    font-size: 400;
+    color: var(--very-dark-blue);
+    line-height: 1.5;
+}
+
+a,
+a:visited,
+a:active{
+    text-decoration: none;
+}

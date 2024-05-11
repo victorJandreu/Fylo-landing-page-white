@@ -1,0 +1,68 @@
+
+//sass --watch sass:css 
+
+/*
+ @include u.breakpoints-number(600px){
+        background-color: red;
+    }
+*/
+
+@use '../util' as u;
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   
+}
+
+.logo{
+    width: 100px;
+}
+
+header, .container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+input, button, input::placeholder{
+    padding: .7rem 0;
+    font-family: var(--body-400);
+    font-size: 400;
+    border-radius: 4px;
+}
+
+input{
+    border: 2px solid var(--light-gray);
+    padding-left: 1rem;
+    color: var(--very-dark-blue);
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: var(--light-gray)
+}
+
+button{
+    color: var(--light-grayish-blue);
+    background-color: var(--bright-blue);
+    border: none;
+    box-shadow: 1px 1px 10px var(--light-gray);
+    cursor: pointer;
+}
